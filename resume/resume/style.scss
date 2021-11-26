@@ -1,0 +1,121 @@
+* {
+  font-family: '-apple-system', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  // box-sizing: border-box;
+}
+
+body {
+  margin: 1rem;
+}
+
+hr {
+  margin-bottom: 0.5rem;
+}
+
+header {
+  background: #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  width: calc(100% - 8px);
+  
+  hr {
+    margin: 1rem 1rem 0 1rem;
+  }
+
+  div {
+    left: 4px;
+    top: -4px;
+    position: relative;
+
+    div {
+      background: #fff;
+      border: 4px solid #ccc;
+      border-radius: 4px;
+      padding: 1rem;
+    }
+  }
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+
+  article {
+    margin-bottom: 1rem;
+
+    div {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .date {
+    font-weight: 600;
+  }
+}
+
+.side-section {
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #eee;
+}
+
+.info {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 1rem;
+
+  p {
+    margin-top: 2px;
+  }
+}
+
+.skills-ref {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0.5rem 0;
+
+  > div > p {
+    padding-bottom: 0.25rem;
+  }
+}
+
+.skills-box {
+  display: flex;
+  flex-direction: column;
+
+  .skill-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#skills-box {
+  display: flex;
+  flex-direction: column;
+
+  .skill-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.circle-box {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: white;
+  border: 2px solid black;
+  margin-right: 4px;
+
+  &--filled {
+    background-color: black;
+  }
+}
